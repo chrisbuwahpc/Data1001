@@ -72,6 +72,7 @@ Vagrant.configure("2") do |config|
     cp /home/vagrant/software/anaconda3/etc/profile.d/conda.sh /etc/profile.d/.
     /home/vagrant/software/anaconda3/bin/conda update conda
 #
-
   SHELL
+
+  config.vm.provision "shell", privileged: false, path: "Vagrant_provision.sh"
 end

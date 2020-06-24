@@ -1,19 +1,21 @@
 # Migrated from Centos7 to Ubuntu20.04 ml_scripts
 # Done by Chris Bording
+#  Original Author Hideo Joho
+# Vagrant jupyter with R.md
 # Update package
 echo "Updating default packages ..."
 sudo apt -y update
 # Install dev tools
-echo "Installing Development tools ..."
-sudo apt -y groupinstall base "Development tools"
-sudo apt -y install zlib-devel bzip2-devel openssl-devel sqlite-devel readline-devel
+#echo "Installing Development tools ..."
+#sudo apt -y groupinstall base "Development tools"
+#sudo apt -y install zlib-devel bzip2-devel openssl-devel sqlite-devel readline-devel
 
 # Disable SELinux and firewall
-echo "Disabling SELinux and firewall ..."
-sudo setenforce 0
-sudo systemctl stop firewalld
-sudo systemctl disable firewalld
-sudo sed -i 's/^SELINUX=.*/SELINUX=disabled/g' /etc/sysconfig/selinux
+#echo "Disabling SELinux and firewall ..."
+#sudo setenforce 0
+#sudo systemctl stop firewalld
+#sudo systemctl disable firewalld
+#sudo sed -i 's/^SELINUX=.*/SELINUX=disabled/g' /etc/sysconfig/selinux
 
 # Install Python and Jupyter notebook
 echo "Installing Python and Jupyter Notebook ..."
