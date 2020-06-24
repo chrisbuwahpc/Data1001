@@ -21,10 +21,9 @@ sudo apt -y update
 echo "Installing Python and Jupyter Notebook ..."
 # sudo apt -y install epel-release
 sudo apt -y install python3.8 python3.8-dev python3-distutils
-sudo apt -y install python3-widgetnbextension python3-testresources jupyter-client
+sudo apt -y install python3-widgetsnbextension python3-testresources jupyter-client
 sudo ln -s /usr/bin/python3 /usr/bin/python
   #statements
-done
 cd
 wget https://bootstrap.pypa.io/get-pip.py
 sudo python3.8 get-pip.py
