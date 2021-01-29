@@ -34,12 +34,12 @@ jupyter contrib nbextension install --user
 
 # Install R and packages
 echo "Installing R and packages ..."
-sudo apt -y install r-base-core
+#sudo apt -y install r-base-core
 sudo apt -y install libczmq-dev libcurl4-openssl-dev libxml2 libxml2-dev
-sudo R -e "install.packages(c('crayon', 'pbdZMQ', 'devtools'), repos = 'https://cran.rstudio.com/', dep = TRUE)"
-sudo R -e "devtools::install_github(paste0('IRkernel/', c('repr', 'IRdisplay', 'IRkernel')))"
-sudo R -e "IRkernel::installspec(user = FALSE)"
+#sudo R -e "install.packages(c('crayon', 'pbdZMQ', 'devtools'), repos = 'https://cran.rstudio.com/', dep = TRUE)"
+#sudo R -e "devtools::install_github(paste0('IRkernel/', c('repr', 'IRdisplay', 'IRkernel')))"
+#sudo R -e "IRkernel::installspec(user = FALSE)"
 
 # Start Jupyter Notebook
-# echo "Starting Jupyter Notebook ..."
-# jupyter notebook --ip=0.0.0.0 --no-browser
+echo "Starting Jupyter Notebook ..."
+echo  "jupyter notebook --ip=0.0.0.0 --no-browser" 
